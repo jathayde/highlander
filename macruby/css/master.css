@@ -8,7 +8,7 @@ body {
 #nest {
   text-align: left;
   width: 890px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   padding: 20px 0;
 }
 
@@ -28,6 +28,8 @@ ul#nav li {
 }
 
 ul#nav li.last {float: right; width: 285px;}
+
+a, a:link, a:hover, a:visited {color: #900;}
 
 div#rightcol {
   width: 285px;
@@ -114,8 +116,8 @@ div#eventbox {
   padding: 10px;
 }
 
-div#newsbox {float: left;}
-div#eventbox {margin-top: 7px;}
+div#newsbox {float: left; margin-right: 10px;}
+div#eventbox {margin-top: 7px; font-size: 10px;}
 
 div#newsbox h3,
 div#eventbox h3 {
@@ -132,4 +134,21 @@ div#newsbox h4 {
   line-height: 24px;
 }
 
-div#newsbox span.date {color: #999; font-style: italic;}
+div#newsbox span.date,
+div#eventbox span.date {color: #999; font-style: italic;}
+
+pre {
+  padding: 10px;
+  overflow: auto;
+  margin-top: 10px;
+  font-family: Courier, Monaco, monospace;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Georgia, Times, serif;
+  line-height: 30px;
+  color: #333;
+}

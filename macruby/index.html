@@ -42,6 +42,9 @@
       
       <div id="eventbox">
         <h3><img src="images/h3_macruby-events.png" alt="MacRuby Events" /></h3>
+        <p><span class="date">18 Oct 2009 &raquo;</span> <a href="">RubyConf 2009</a><br />
+          Orlando, Florida<br />
+          Laurent presents MacRuby 0.5</p>
       </div><!-- // end events -->
     </div><!-- // end rightcol -->
     <div id="leftcol">
@@ -67,7 +70,22 @@
       </div><!-- //end newsbox -->
       
       <h2>HotCocoa Is For Me!</h2>
+      <p>If you've done any amount of programming on OS X, you know that the API can be quite verbose. HotCocoa simplifies this down to very elegant and simple methods that then return super sexy UI elements. <a href="">Check out some of the cool things you can do with HotCocoa!</a></p>
+<code><pre>
+require 'hotcocoa'
+include HotCocoa
+application do |app|
+  win = window :size => [100,50]
+  b = button :title => 'Hello'
+  b.on_action { puts 'World!' }
+  win << b
+end
+</pre></code>
+      <hr size="0" noshade class="doublerule" />
       
+      <h2>Why MacRuby?</h2>
+      <p>MacRuby began as an attempt to work around many problems inherent in RubyCocoa. In the course of solving these problems, MacRuby has also solved numerous problems in Ruby 1.8. Consequently, there are a number of reasons (e.g. conveience, efficiency, flexibility, performance) why one might wish to use MacRuby for new (and ongoing) Ruby applications... <a href=""><i>Read more...</i></a></p>
+      <hr size="0" noshade class="doublerule" />
       
     </div><!-- // end leftcol -->
   </div><!-- // end nest -->
